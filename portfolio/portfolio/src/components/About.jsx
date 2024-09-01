@@ -41,7 +41,7 @@ function About() {
             </p>
             <div className="about-btn">
               <button className="btn">
-                Download CV <UilImport />
+                View Resume <UilImport />
               </button>
             </div>
           </div>

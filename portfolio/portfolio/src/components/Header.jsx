@@ -35,7 +35,7 @@ function Header() {
         </ul>
       </div>
       <div className="nav-button">
-        <button className="btn">Download CV <UilFileAlt /></button>
+        <button className="btn">View Resume <UilFileAlt /></button>
       </div>
       <div className="nav-menu-btn">
         <UilBars onClick={toggleMenu} />
