@@ -14,7 +14,6 @@ import {
 
 function FeaturedBox() {
   useEffect(() => {
-    
     const typed = new Typed('.typedText', {
       strings: ['Developer', 'Designer'],
       loop: true,
@@ -23,14 +22,12 @@ function FeaturedBox() {
       backDelay: 2000,
     });
 
-
     const sr = ScrollReveal({
       origin: 'top',
       distance: '80px',
       duration: 2000,
       reset: true,
     });
-
 
     sr.reveal('.featured-text-card', {});
     sr.reveal('.featured-name', { delay: 100 });
@@ -39,9 +36,28 @@ function FeaturedBox() {
     sr.reveal('.social_icons', { delay: 200 });
     sr.reveal('.featured-image', { delay: 300 });
 
-   
+    // Hide the menu when a link is clicked
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const menuBtn = document.getElementById('myNavMenu');
+        if (menuBtn) {
+          menuBtn.className = 'nav-menu'; // Reset to non-responsive class
+        }
+      });
+    });
+
     return () => {
       typed.destroy();
+      // Clean up event listeners when component unmounts
+      navLinks.forEach(link => {
+        link.removeEventListener('click', function() {
+          const menuBtn = document.getElementById('myNavMenu');
+          if (menuBtn) {
+            menuBtn.className = 'nav-menu';
+          }
+        });
+      });
     };
   }, []);
 
