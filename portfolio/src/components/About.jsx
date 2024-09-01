@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import { UilImport } from '@iconscout/react-unicons';
+import { UilFileAlt } from '@iconscout/react-unicons';
 
 function About() {
   useEffect(() => {
@@ -41,7 +41,7 @@ function About() {
             </p>
             <div className="about-btn">
               <button className="btn">
-                View Resume <UilImport />
+                View Resume <UilFileAlt />
               </button>
             </div>
           </div>

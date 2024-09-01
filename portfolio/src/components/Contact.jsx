@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
+import { UilMessage } from '@iconscout/react-unicons';
 
 function Contact() {
   useEffect(() => {
@@ -46,7 +47,7 @@ function Contact() {
               <textarea placeholder="Message"></textarea>
             </div>
             <div className="form-button">
-              <button className="btn">Send <i className="uil uil-message"></i></button>
+              <button className="btn">Send <UilMessage /></button>
             </div>
           </div>
         </div>
