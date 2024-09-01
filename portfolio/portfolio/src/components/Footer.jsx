@@ -1,5 +1,5 @@
 import React from 'react';
-// Import Unicons icons
+
 import { UilInstagram, UilLinkedinAlt, UilDribbble, UilGithubAlt } from '@iconscout/react-unicons';
 
 function Footer() {

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-// Import the specific icon from Unicons
 import { UilImport } from '@iconscout/react-unicons';
 
 function About() {

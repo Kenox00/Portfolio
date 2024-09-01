@@ -3,12 +3,12 @@ import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
 import avatar from '../assets/images/male.jpg';
 
-// Import Unicons icons
+
 import { UilInstagram, UilLinkedinAlt, UilDribbble, UilGithubAlt, UilFileAlt, UilMouseAlt } from '@iconscout/react-unicons';
 
 function FeaturedBox() {
   useEffect(() => {
-    // Initialize Typed.js
+    
     new Typed('.typedText', {
       strings: ['Developer', 'Designer'],
       loop: true,
@@ -17,7 +17,7 @@ function FeaturedBox() {
       backDelay: 2000,
     });
 
-    // Initialize ScrollReveal
+    
     const sr = ScrollReveal({
       origin: 'top',
       distance: '80px',
@@ -32,7 +32,7 @@ function FeaturedBox() {
     sr.reveal('.social_icons', { delay: 200 });
     sr.reveal('.featured-image', { delay: 300 });
 
-  }, []); // Empty dependency array ensures this runs once when the component mounts
+  }, []); 
 
   return (
     <section className="featured-box" id="home">

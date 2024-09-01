@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-// Import Unicons icons
+
 import { UilBriefcaseAlt, UilUsersAlt, UilAward } from '@iconscout/react-unicons';
 
 function Projects() {
