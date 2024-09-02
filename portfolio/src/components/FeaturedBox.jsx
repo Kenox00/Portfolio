@@ -60,6 +60,13 @@ function FeaturedBox() {
       });
     };
   }, []);
+// Going to gmail when clicking on hire me button
+const handleClick = () => {
+  const recipient = 'kwihanganaenock99@gmail.com';
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}`;
+
+  window.open(gmailUrl, '_blank');
+};
 
   return (
     <section className="featured-box" id="home">
@@ -77,7 +84,7 @@ function FeaturedBox() {
           </p>
         </div>
         <div className="featured-text-btn">
-          <button className="btn blue-btn">Hire Me</button>
+          <button className="btn blue-btn" onClick={handleClick}>Hire Me</button>
           <button className="btn">
           View Resume<i><UilFileAlt /></i>
           </button>
