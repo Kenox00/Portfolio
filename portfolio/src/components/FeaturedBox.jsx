@@ -63,10 +63,7 @@ function FeaturedBox() {
 // Going to gmail when clicking on hire me button
 const handleEmailClick = () => {
   const recipient = 'kwihanganaenock99@gmail.com';
-  const subject = 'Hiring Inquiry';
-  const body = 'Hello Enock,\n\nI would like to discuss a potential opportunity with you.\n\nBest regards,';
-
-  const mailtoUrl = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoUrl = `mailto:${encodeURIComponent(recipient)}`;
   window.location.href = mailtoUrl;
 };
   return (
