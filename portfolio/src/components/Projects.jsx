@@ -24,17 +24,17 @@ function Projects() {
         <div className="project-box">
          <i><UilBriefcaseAlt /></i> 
           <h3>Completed</h3>
-          <label>15+ Finished Projects</label>
+          <label>3+ Finished Projects</label>
         </div>
         <div className="project-box">
          <i><UilUsersAlt /></i> 
           <h3>Clients</h3>
-          <label>25+ Happy Clients</label>
+          <label>0 Happy Client</label>
         </div>
         <div className="project-box">
           <i><UilAward /></i>
           <h3>Experience</h3>
-          <label>7+ Years in the field</label>
+          <label>1 Year in the field</label>
         </div>
       </div>
     </section>
