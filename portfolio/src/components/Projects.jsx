@@ -29,7 +29,7 @@ function Projects() {
         <div className="project-box">
          <i><UilUsersAlt /></i> 
           <h3>Clients</h3>
-          <label>0 Happy Client</label>
+          <label>1 Happy Client</label>
         </div>
         <div className="project-box">
           <i><UilAward /></i>
